@@ -74,3 +74,6 @@ alias nv='nvim'
 # Shell Integration
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Exports
+export UNCRUSTIFY_CONFIG=~/.dotfiles/.config/formatting/uncrustify.cfg
