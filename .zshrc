@@ -24,6 +24,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light MichaelAquilina/zsh-you-should-use
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -74,6 +75,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias c='clear'
 alias nv='nvim'
+alias openzs='nv ~/.dotfiles/.zshrc'
 
 # Shell Integration
 eval "$(fzf --zsh)"
