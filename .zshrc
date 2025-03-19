@@ -48,6 +48,7 @@ set -o vi
 bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^f' autosuggest-accept
 
 # History
 HISTSIZE=10000
