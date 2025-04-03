@@ -30,7 +30,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 First, copy the dotfiles repo into $HOME using git
 
 ```
-$ git clone git@github.com/Qu1nn1/dotfiles.git
+$ git clone git@github.com/Qu1nn1/dotfiles
 $ cd dotfiles
 ```
 
