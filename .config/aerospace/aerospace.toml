@@ -46,15 +46,19 @@ automatically-unhide-macos-hidden-apps = true
 # Window detected
 [[on-window-detected]]
     if.app-id = 'app.zen-browser.zen'
-    run = 'move-node-to-workspace B' # mnemonics B - Browser
+    run = 'move-node-to-workspace B' # B - Browser
 
 [[on-window-detected]]
     if.app-id = 'com.googlecode.iterm2'
-    run = 'move-node-to-workspace T' # mnemonics T - Terminal
+    run = 'move-node-to-workspace T' # T - Terminal
 
 [[on-window-detected]]
     if.app-id = 'com.apple.Notes'
     run = 'move-node-to-workspace N' # N - Notes
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace M' # M - Music
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'

@@ -84,3 +84,4 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Exports
 export UNCRUSTIFY_CONFIG=~/.dotfiles/.config/formatting/uncrustify.cfg
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
