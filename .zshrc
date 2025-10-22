@@ -77,6 +77,7 @@ alias c='clear'
 alias nv='nvim'
 alias openzs='nv ~/.dotfiles/.zshrc'
 alias opennv='nv ~/.dotfiles/.config/nvim/init.lua'
+alias opendf='cd ~/.dotfiles/.config'
 
 # Shell Integration
 eval "$(fzf --zsh)"
