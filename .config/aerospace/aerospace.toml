@@ -139,8 +139,6 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
 alt-e = 'workspace e' # Blank Space 1
 alt-d = 'workspace d'
 alt-c = 'workspace c'
@@ -153,14 +151,12 @@ alt-m = 'workspace M' # Music
 alt-n = 'workspace N' # Notes
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace 1'
-alt-shift-2 = 'move-node-to-workspace 2'
-alt-shift-3 = 'move-node-to-workspace 3'
-alt-shift-4 = 'move-node-to-workspace 4'
-alt-shift-5 = 'move-node-to-workspace 5'
-alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-7 = 'move-node-to-workspace 7'
-alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-e = 'move-node-to-workspace e'
+alt-shift-d = 'move-node-to-workspace d'
+alt-shift-c = 'move-node-to-workspace c'
+alt-shift-r = 'move-node-to-workspace r'
+alt-shift-f = 'move-node-to-workspace f'
+alt-shift-v = 'move-node-to-workspace v'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-b = 'move-node-to-workspace B'
 alt-shift-m = 'move-node-to-workspace M'
