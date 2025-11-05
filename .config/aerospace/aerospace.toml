@@ -46,19 +46,23 @@ automatically-unhide-macos-hidden-apps = true
 # Window detected
 [[on-window-detected]]
     if.app-id = 'app.zen-browser.zen'
-    run = 'move-node-to-workspace B' # B - Browser
+    run = 'move-node-to-workspace Q' # Q - Browser
 
 [[on-window-detected]]
     if.app-id = 'com.googlecode.iterm2'
-    run = 'move-node-to-workspace T' # T - Terminal
+    run = 'move-node-to-workspace Z' # Z - Terminal
 
 [[on-window-detected]]
     if.app-id = 'com.apple.Notes'
-    run = 'move-node-to-workspace N' # N - Notes
+    run = 'move-node-to-workspace X' # X - Notes
 
 [[on-window-detected]]
     if.app-id = 'com.spotify.client'
-    run = 'move-node-to-workspace M' # M - Music
+    run = 'move-node-to-workspace C' # C - Music
+
+[[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = 'move-node-to-workspace E' # E - Brave
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'
@@ -139,29 +143,26 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-e = 'workspace e' # Blank Space 1
-alt-d = 'workspace d'
-alt-c = 'workspace c'
-alt-r = 'workspace r'
-alt-f = 'workspace f'
-alt-v = 'workspace v'
-alt-t = 'workspace T' # Terminal
-alt-b = 'workspace B' # Browser
-alt-m = 'workspace M' # Music
-alt-n = 'workspace N' # Notes
+alt-q = 'workspace Q' # Q - Browser
+alt-a = 'workspace A'
+alt-z = 'workspace Z' # Z - Terminal
+alt-w = 'workspace W'
+alt-s = 'workspace S'
+alt-x = 'workspace X' # X - Notes
+alt-e = 'workspace E' # E - Brave
+alt-d = 'workspace D'
+alt-c = 'workspace C' # C - Notes
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-e = 'move-node-to-workspace e'
-alt-shift-d = 'move-node-to-workspace d'
-alt-shift-c = 'move-node-to-workspace c'
-alt-shift-r = 'move-node-to-workspace r'
-alt-shift-f = 'move-node-to-workspace f'
-alt-shift-v = 'move-node-to-workspace v'
-alt-shift-9 = 'move-node-to-workspace 9'
-alt-shift-b = 'move-node-to-workspace B'
-alt-shift-m = 'move-node-to-workspace M'
-alt-shift-t = 'move-node-to-workspace T'
-alt-shift-n = 'move-node-to-workspace N'
+alt-shift-q = 'move-node-to-workspace Q'
+alt-shift-a = 'move-node-to-workspace A'
+alt-shift-z = 'move-node-to-workspace Z'
+alt-shift-w = 'move-node-to-workspace W'
+alt-shift-s = 'move-node-to-workspace S'
+alt-shift-x = 'move-node-to-workspace X'
+alt-shift-e = 'move-node-to-workspace E'
+alt-shift-d = 'move-node-to-workspace D'
+alt-shift-c = 'move-node-to-workspace C'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
