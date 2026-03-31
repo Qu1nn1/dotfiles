@@ -46,7 +46,7 @@ automatically-unhide-macos-hidden-apps = true
 # Window detected
 [[on-window-detected]]
     if.app-id = 'app.zen-browser.zen'
-    run = 'move-node-to-workspace Q' # Q - Browser
+    run = 'move-node-to-workspace Q' # Q - Zen
 
 [[on-window-detected]]
     if.app-id = 'com.googlecode.iterm2'
@@ -63,6 +63,10 @@ automatically-unhide-macos-hidden-apps = true
 [[on-window-detected]]
     if.app-id = 'com.brave.Browser'
     run = 'move-node-to-workspace E' # E - Brave
+
+[[on-window-detected]]
+    if.app-id = 'com.anthropic.claudefordesktop'
+    run = 'move-node-to-workspace S' # S - Claude
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'
