@@ -1,3 +1,8 @@
+# Auto-start tmux in iTerm
+if [[ -o interactive ]] && [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "iTerm.app" ]] && [[ -x /opt/homebrew/bin/tmux ]]; then
+  exec /opt/homebrew/bin/tmux new-session -A -s main
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -46,7 +51,6 @@ zinit cdreplay -q
 set -o vi
 
 # Keybindings
-bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^f' autosuggest-accept
@@ -65,7 +69,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-a}'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
@@ -109,4 +113,13 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+# Added by dbt installer
+export PATH="$PATH:/Users/q/.local/bin"
+
+# dbt aliases
+alias dbtf=/Users/q/.local/bin/dbt
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
