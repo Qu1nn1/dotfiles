@@ -1,6 +1,6 @@
 # Auto-start tmux in iTerm
-if [[ -o interactive ]] && [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "iTerm.app" ]] && [[ -x /opt/homebrew/bin/tmux ]]; then
-  exec /opt/homebrew/bin/tmux new-session -A -s main
+if [[ -o interactive ]] && [[ -z "$TMUX" ]] && [[ -z "$NO_TMUX" ]] && [[ "$TERM_PROGRAM" == "iTerm.app" ]] && [[ -x /opt/homebrew/bin/tmux ]]; then
+    exec /opt/homebrew/bin/tmux new-session -A -s main
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
