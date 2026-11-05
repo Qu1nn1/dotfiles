@@ -65,6 +65,10 @@ automatically-unhide-macos-hidden-apps = true
     run = 'move-node-to-workspace E' # E - Brave
 
 [[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = 'move-node-to-workspace E' # E - Jellyfin
+
+[[on-window-detected]]
     if.app-id = 'com.anthropic.claudefordesktop'
     run = 'move-node-to-workspace S' # S - Claude
 
